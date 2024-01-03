@@ -1,4 +1,4 @@
-const z = use("zod");
+const z = require("zod");
 
 const createTodo = z.object({
     title : z.string(),
@@ -10,6 +10,6 @@ const updateTodo = z.object({
 });
 
 module.exports = {
-    createTodo : createTodo,
-    updateTodo : updateTodo
+    updateTodo : updateTodo,
+    createTodo : createTodo
 }
